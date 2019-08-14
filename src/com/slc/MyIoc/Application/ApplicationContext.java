@@ -41,7 +41,7 @@ public class ApplicationContext {
 		return beanFactory.getBean(className);
 	}
 	public ApplicationContext run(Class clazz){
-		
+		//1
 		this.clazz = clazz;
 		URL url = clazz.getClassLoader().getResource("");
 		path = StringUtils.getPath(url.toString());
